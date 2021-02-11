@@ -5,7 +5,7 @@ char str[LIMIT];
 
 int main(){
   // char str[100];
-  printf("Enter a String or press ENTER to exit\n");
+  printf("Enter a String or press ZERO to exit\n");
   int x = 1;
   int i = 0;
   while(x){
@@ -17,11 +17,8 @@ int main(){
 	break;
       }
       str[i] = input;
-      putchar(input);
-      
+      putchar(input);     
     }
       putchar('\n');
-    
   }
-  
 }
