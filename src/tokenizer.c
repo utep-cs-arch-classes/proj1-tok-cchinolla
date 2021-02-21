@@ -7,12 +7,16 @@ int space_char(char c){
   if ((c != 0 ) && c == " " | c == "\t"){
     return true;
   }
+  return false;
 }
 
 
 //true if c not a tab or space, and not zero
 int non_space_char(char c){
-
+  if ((c != 0) && c != " " | c != "\t"){
+    return true;
+  }
+  return false;
 }
 
 //* to first non-space char in first word
