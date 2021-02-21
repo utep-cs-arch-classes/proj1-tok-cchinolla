@@ -4,7 +4,9 @@
 
 //true if c is a tab or space, and not zero
 int space_char(char c){
-  
+  if ((c != 0 ) && c == " " | c == "\t"){
+    return true;
+  }
 }
 
 
