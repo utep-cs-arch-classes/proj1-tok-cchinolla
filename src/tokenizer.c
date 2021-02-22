@@ -6,8 +6,8 @@
 int space_char(char c){
   if ((c != 0 ) && c == " " | c == "\t"){
     return true;
-  }
-  return false;
+  }else{
+    return false;
 }
 
 
@@ -15,18 +15,21 @@ int space_char(char c){
 int non_space_char(char c){
   if ((c != 0) && c != " " | c != "\t"){
     return true;
-  }
-  return false;
+  }else{
+    return false;
 }
 
 //* to first non-space char in first word
 char *word_start(char *str){
-
+  int i = 0;
+  while(non_space_char(word[i])){
+    i++;
+  }
 }
 
 //* to for space char after end of word
 char *word_end(chaar *str){
-
+  
 }
 
 //the number of words in s
