@@ -38,5 +38,16 @@ char *word_end(chaar *str){
 
 //the number of words in s
 int count_words(char *str){
-
+  int count = 0;
+  int count2 = 0;
+  while(*str){
+    if(*str == '/t' || *str == ' ' || *str == '\n'){
+      count 2 = 0;
+    }else if(count2 == 0){
+      count2 = 1;
+      count++;
+    }
+    str++;
+  }
+  return count;
 }
