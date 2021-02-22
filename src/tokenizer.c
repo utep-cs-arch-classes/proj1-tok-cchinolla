@@ -29,7 +29,11 @@ char *word_start(char *str){
 
 //* to for space char after end of word
 char *word_end(chaar *str){
-  
+  int i = 0;
+  while(non_space_char(str[i])){
+    i++;
+  }
+  return &str[i];
 }
 
 //the number of words in s
