@@ -45,3 +45,10 @@ char *get_history(List *list, int id){
   }
 }
 
+void print_history(List *list){
+  Item *temp = list->root;
+  while(temp != NULL){
+    printf("ID: %d || %s\n", temp->id, temp->str);
+    temp = temp->next;
+  }
+}
